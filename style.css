@@ -1,5 +1,6 @@
 * {
     text-decoration: none;
+    background-color:rgb(58, 48, 48);
 }
 header{
     display: flex;
@@ -7,7 +8,7 @@ header{
     align-items: center;
 }
 .signin{
-    border-radius: 5px;
+ border-radius: 5px;
 margin-right: 38px;
 padding: 15px 20px;
 display: inline-flex;
@@ -23,40 +24,49 @@ small{
     padding-left:0px;
     justify-content: space-between;
     align-items: center;}
-
-
-
-
-@media(max-width:768px){
+.oursolitions{
+    display: flex;
+    flex-direction: column;
+}
     .linkler{
         display: none;
     }
 .fa-bars{
     display: block;
 }
-.button{
-    font-size: 5px;
-    
+.kecid{
+    width: 250px;
+    margin-left: 20px;
 }
+.kecid img{
+    width: 100%;
+}
+
 .photo{
-    font-size: 100px;
+    width: 250px;
+    margin-left: 37px;
     }
- .photo{
-font-size: 100%;
+ .photo img {
+width: 100%;
   }
-
+.solitions-leftside h1{
+    padding-left: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
+  section.oursolitions .sekil1{
+width:250px;
+padding-left: 20px;
+  }
+section.oursolitions .sekil1 img{
+    width: 100%;
+}
+.under{
+width: 500px; 
+display: inline;
+}
+.under img{
+    width: 100%;
+}
 
 @media(min-width:767px) and (max-width:991px) {
 .orta{
@@ -74,9 +84,34 @@ align-items: center;
     font-size:16px ;
     padding-right:9px;
 }
+.photo{
+    width: 500px;
+    }
+ .photo img {
+width: 100%;}
 .kecid{
-    padding-left:90px;
+width: 400px;
+padding-left: 40px;
+
 }
+.kecid img{
+    width: 100%;
+}
+section .solitions-leftside h1{
+    font-size: 33px;
+}
+section .solitions-leftside p{
+    font-size: 25px;
+}
+section.oursolitions .sekil1{
+    width:450px;
+    padding-left: 110px;
+    
+      }
+    section.oursolitions .sekil1 img{
+        width: 100%;
+    }
+ 
 
 }
 @media(min-width:991px) {
@@ -87,18 +122,45 @@ align-items: center;
 font-size: 40px;
 }
 .photo{
-    display: flex;
-    margin-left:px;
-}
+    width: 800px;
+    padding-right: 50px;
+    }
+ .photo img {
+width: 100%;}
+
 .center{
     font-size: 19px;
 }
 .kecid{
-    padding-left: 110px;
+    width: 500px;
+    padding-left: 60px;
 }
+.kecid img{
+    width: 100%;
+}
+section .solitions-leftside h1{
+    font-size: 30px;
+    padding-left:190px;
+}
+section .solitions-leftside p{
+    font-size: 25px;
 
-
-
+    section.oursolitions .sekil1{
+        width:450px;
+        padding-left: 110px;    
+}
+}
+section.oursolitions .sekil1{
+    width:700px;
+    padding-left: 190px;
+    
+      }
+    section.oursolitions .sekil1 img{
+        width: 100%;
+    }
+.solitions-leftside{
+    display: fl
+}
 
 }
 
