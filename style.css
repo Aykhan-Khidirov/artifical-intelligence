@@ -1,7 +1,89 @@
 * {
     text-decoration: none;
-    background-color:rgb(58, 48, 48);
 }
+:root {
+    --real-color: #3A68B8;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-left-side h6 {
+    color: var(--real-color);
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 15px;
+
+}
+
+.intro-left-side h1 {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.intro-left-side p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ccc;
+    line-height: normal;
+    text-align: center;
+    margin: 40px 5px;
+}
+
+.butttonlar {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-left: 53px;
+
+}
+
+.butttonlar button {
+    background: var(--real-color);
+    border-color: transparent;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.butttonlar button:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro-right-side {
+    width: 320px;
+    margin: 30px auto;
+}
+
+.intro-right-side img {
+    width: 100%;
+}
+
+
+
+
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -14,20 +96,52 @@ padding: 15px 20px;
 display: inline-flex;
 background-color:#ccc;
 }
-.left{
-    font-size: 20px;
-margin-left: 15px;
+.left h1{
+    font-size: 40px;
+margin-left: 22px;
 
+}
+.center h1{
+    font-size: 25px;
+    padding-left: 10px;
 }
 small{
     font-size: 15px;
     padding-left:0px;
     justify-content: space-between;
-    align-items: center;}
-.oursolitions{
-    display: flex;
-    flex-direction: column;
+    align-items: center;
+
 }
+.oursolitions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px;
+    }
+    
+    .solitions-leftside h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-right: 30px;
+    }
+    
+    .solitions-leftside p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #ccc;
+    }
+    
+    .solitions-rightside {
+        width: 290px;
+    }
+    
+    .solitions-rightside img {
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    
     .linkler{
         display: none;
     }
@@ -36,7 +150,7 @@ small{
 }
 .kecid{
     width: 250px;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 .kecid img{
     width: 100%;
@@ -44,86 +158,380 @@ small{
 
 .photo{
     width: 250px;
-    margin-left: 37px;
+    margin-left: 80px;
     }
  .photo img {
 width: 100%;
   }
 .solitions-leftside h1{
-    padding-left: 20px;
+padding-left: 30px;
 }
 
   section.oursolitions .sekil1{
 width:250px;
-padding-left: 20px;
+padding-left: 60px;
   }
 section.oursolitions .sekil1 img{
     width: 100%;
 }
 .under{
-width: 500px; 
+width: 900px; 
 display: inline;
 }
 .under img{
     width: 100%;
 }
-
-@media(min-width:767px) and (max-width:991px) {
-.orta{
-flex-direction: column;
-align-items: center; 
+.reklam{
+    width:350px ;
+    padding-left: 20px;
 }
-.orta{
-    margin-left: 75px;
+.reklam img{
+width: 100%;
 }
-.left{
-    padding-left: 90px;
-    font-size: 30px;
+.learning{
+    width: 300px;
+padding-left: 50px;
 }
-.center{
-    font-size:16px ;
-    padding-right:9px;
-}
-.photo{
-    width: 500px;
-    }
- .photo img {
-width: 100%;}
-.kecid{
-width: 400px;
-padding-left: 40px;
-
-}
-.kecid img{
+.learning img{
     width: 100%;
 }
-section .solitions-leftside h1{
-    font-size: 33px;
+
+section.bloklar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+
 }
-section .solitions-leftside p{
-    font-size: 25px;
+
+section.bloklar .blok {
+    height: 340px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.08);
+    transition: .8s ease all;
+    cursor: pointer;
 }
-section.oursolitions .sekil1{
-    width:450px;
-    padding-left: 110px;
+
+section.bloklar .blok:hover {
+    box-shadow: 0px 0px 10px 1.3px rgba(255, 255, 255, 0.5);
+
+}
+
+section.bloklar .blok h4 {
+    opacity: 0.7;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+
+footer .links {
+    text-align: left;
+    padding-left: 10px;
+}
+
+footer .links img {
+    width: 230px;
+}
+
+footer .links p {
+    font-size: 17px;
+    color: #ccc;
+}
+
+footer .links p a {
+    color: #fff;
+    font-size: 18px;
+    padding-left: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+footer .links p span {
+    font-size: 16px;
+}
+
+footer .links p a:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .texts h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .texts p {
+    color: #ccc;
+    font-size: 14px;
+    text-align: left;
+}
+
+footer .social h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .social p {
+    text-align: left;
+    color: #ccc;
+    font-size: 16px;
+}
+
+footer .social a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+footer .social a:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+footer .social i {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+footer .social label {
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+
+
+
+
+@media(min-width:767px) and (max-width:991px) {
+
+
+
+.introduction {
+    flex-direction: row;
+}
+
+.intro-left-side {
+    max-width: 350px;
+    max-height: 300px;
+}
+
+.intro-left-side h6 {
+
+    font-size: 18px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.intro-left-side h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 30px;
+
+}
+
+.intro-left-side p {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 30px;
+
+}
+
+.butttonlar {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    margin: 20px 30px;
+}
+
+.intro-right-side {
+
+    width: 550px;
+    margin: 30px auto;
+    position: relative;
+    top: 50px;
+}
+
+
+.intro-right-side img {
+    width: 100%;
+}
+
+
+.solitions-leftsideh1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.solitions-leftside p {
+
+    font-size: 26px;
+}
+
+.solitions-rightside {
+    width: 700px;
+    padding-top: 40px;
+
+}
+
+
+
+
+
+ .reklam{
+    width: 620px;
+    padding-left: 80px;
     
-      }
-    section.oursolitions .sekil1 img{
-        width: 100%;
-    }
+ }
+ .reklam img{
+    width: 100%;
+ }
  
+ .learning{
+    width: 700px;
+padding-left: 19px;
+}
+.learning img{
+    width: 100%;
+}
+
+section.bloklar {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+section.bloklar .blok {
+    margin: 10px;
+    width: 350px;
+}
+
+section.bloklar .blok h4 {
+    font-size: 18px;
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-list h1 {
+    font-size: 30px;
+}
+footer .footer-list p,i,a{
+    font-size: 20px;
+}
+.footer-list .fa-solid{
+    font-size: 23px;
+}
+.social a{
+    font-size: 90px;
+}
+footer .social h1{
+    text-align: left;
+}
+
 
 }
 @media(min-width:991px) {
 .orta{
     padding-left: 300px;
 }
-.left{
-font-size: 40px;
+
+
+.introduction {
+    flex-direction: row
 }
+
+.intro-left-side h6 {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.intro-left-side h1 {
+    font-size: 50px;
+    text-align: left;
+    margin-left: 40px;
+
+}
+
+.intro-left-side p {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 40px;
+
+}
+
+.intro-right-side {
+    width: 500px;
+    margin: 30px auto;
+}
+
+.intro-right-side img {
+    width: 100%;
+}
+
+.butttonlar {
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.oursolitions{
+flex-direction: row;
+}
+
+.solitions-leftside h1 {
+    text-align: left;
+        font-size: 42px;
+}
+
+.solitions-leftside p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.solitions-rightside {
+    width: 600px;
+}
+
+.solitions-rightside img {
+    width: 100%;
+    padding-top: 40px;
+}
+
+
+
+
+
+.left h1{
+font-size: 80px;
+}
+
 .photo{
-    width: 800px;
-    padding-right: 50px;
+    width: 700px;
+    
     }
  .photo img {
 width: 100%;}
@@ -158,11 +566,57 @@ section.oursolitions .sekil1{
     section.oursolitions .sekil1 img{
         width: 100%;
     }
-.solitions-leftside{
-    display: fl
+.reklam{
+width: 1000px;
+padding-left: 150px;
 }
+.reklam img{
+width: 100%;
+}
+.learning{
+    display: flex;
+    width: 600px;
+    padding-left: 30px;
+}
+.learning img{
+    width: 100%;
+}
+
+section.bloklar {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100wh;
+}
+
+section.bloklar .blok {
+    width: 209px;
 
 }
 
+section.bloklar .blok h2 {
+    font-size: 16px;
+}
+
+section.bloklar .blok h4 {
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer .texts{
+    margin-top: 80px;
+}
+footer .social{
+    margin-top: 80px;
+}
+footer .social h1{
+    text-align: left;
+}
+
+
+}
 
 
